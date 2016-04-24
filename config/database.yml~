@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: prueba3_development
+  database: library_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: prueba3
+  #username: daniel
 
   # The password associated with the postgres role (username).
   #password:
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: prueba3_production
-  username: prueba3
+  database: library_production
+  username: daniel
   password: <%= ENV['PRUEBA3_DATABASE_PASSWORD'] %>
