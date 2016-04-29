@@ -1,4 +1,4 @@
 <h1>Sistema de información grupo 10</h1>
-<%= @signature %>
-<%= @almacenes[0][0] %>
+Sémola: <%= @semola %>
+<%= @queso %>
 
