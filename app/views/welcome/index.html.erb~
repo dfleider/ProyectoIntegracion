@@ -1,1 +1,4 @@
 <h1>Sistema de información grupo 10</h1>
+Sémola: <%= @semola %>
+<%= @queso %>
+

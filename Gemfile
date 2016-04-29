@@ -13,6 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # Gema para cliente rest
 gem 'rest-client', '~> 1.8.0'
+# Gema para hmac
+gem 'ruby-hmac', '~> 0.4.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
