@@ -45,9 +45,9 @@ require 'hmac-sha1'
       id = @almacenes[i][0]
       @signature[i] = 'GET' + id
       #hmac = HMAC::SHA1.new(key)
-      hmac.update(signature)
+      hmac.update(@signature[i])
       @clave[i] = Base64.encode64("#{hmac.digest}")
-      #almacenes = RestClient.get 'http://integracion-2016-dev.herokuapp.com/bodega/skusWithStock', {:Authorization => 'INTEGRACION grupo1:' + clave, :content_type => 'application/json', :params => {:almacenId => '571262aaa980ba030058a14c'}}
+      almacenes = RestClient.get 'http://integracion-2016-dev.herokuapp.com/bodega/skusWithStock', {:Authorization => 'INTEGRACION grupo1:' + @clave[i], :content_type => 'application/json', :params => {:almacenId => id}}
       i += 1
     end
   end
